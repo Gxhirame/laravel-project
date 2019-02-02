@@ -8,7 +8,9 @@ if(isset ($pics)){
         echo "<div class='showroom'><ul class='ul-box'>";
         //echo $pic."<br>";
         ?>
-        <li><a href=""><img src='{{asset('storage/'.$pic) }}' width="200" height="200"></a></li>
+        <li>
+                <a href="/home"><img src='{{asset('storage/'.$pic)}}' width="200" height="200"></a><br>
+        </li>
         <?php
         echo "</ul></div>";
     }

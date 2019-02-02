@@ -33,4 +33,3 @@ Route::get('/upload', 'HomeController@upload')->name('upload');
 
 Route::post('/upload', 'HomeController@store')->name('store');
 
-//test

@@ -2,18 +2,18 @@
 
 @section('content')
 <!--ここから書く-->
-<h1>ようこそ、{{ Auth::user()->name }}さん</h1>
+<h1>Welcom {{ Auth::user()->name }}</h1>
 <div class="account information">
-    <h2>登録情報</h2>
-    <p>アカウント名:{{ Auth::user()->name }}</p>
-    <p>メールアドレス:{{ Auth::user()->email}}</p>
-    <p>アカウント作成日:{{Auth::user()->created_at}}</p>
-    <p>更新日:{{Auth::user()->updated_at}}</p>
+    <h2>User Information</h2>
+    <p>User Name:{{ Auth::user()->name }}</p>
+    <p>Mail address:{{ Auth::user()->email}}</p>
+    <p>Created Date and Time:{{Auth::user()->created_at}}</p>
+    <p>Date of Update:{{Auth::user()->updated_at}}</p>
 </div>
 
 
 
-<span class="uploade"><a href="/upload" name="upload"> 画像をアップロードする</a></span>
+<span class="uploade"><a href="/upload" name="upload"> Upload a image file</a></span>
 
 <?php
 if(isset ($pics)){

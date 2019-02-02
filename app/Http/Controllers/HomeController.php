@@ -37,29 +37,37 @@ class HomeController extends Controller
     //C code pictures page
     public function c()
     {
-        $pics =DB::table('posts')->where('language','C')->pluck('image');
-        return view('c-page', compact('pics'));
+        $title=DB::table('posts')->where('language','C')->pluck('title'); //DBのカラムlanguageがCのものからtitleを取得代入
+        $pics =DB::table('posts')->where('language','C')->pluck('image'); //DBのカラムlanguageがCのものからimageを取得代入
+        $content=DB::table('posts')->where('language','C')->pluck('content');//DBのカラムlanguageがCのものからcontentを取得代入
+        return view('c-page', compact('title','pics','content'));
     }
     
     //Python pictures page
     public function python()
     {
-        $pics =DB::table('posts')->where('language','Python')->pluck('image');
-        return view('Python-page', compact('pics'));
+        $title=DB::table('posts')->where('language','Python')->pluck('title'); //DBのカラムlanguageがCのものからtitleを取得代入
+        $pics =DB::table('posts')->where('language','Python')->pluck('image'); //DBのカラムlanguageがCのものからimageを取得代入
+        $content=DB::table('posts')->where('language','Python')->pluck('content');//DBのカラムlanguageがCのものからcontentを取得代入
+        return view('c-page', compact('title','pics','content'));
     }
     
     //php pictures page
     public function php()
     {
-        $pics =DB::table('posts')->where('language','PHP')->pluck('image');
-        return view('PHP-page', compact('pics'));
+        $title=DB::table('posts')->where('language','PHP')->pluck('title'); //DBのカラムlanguageがCのものからtitleを取得代入
+        $pics =DB::table('posts')->where('language','PHP')->pluck('image'); //DBのカラムlanguageがCのものからimageを取得代入
+        $content=DB::table('posts')->where('language','PHP')->pluck('content');//DBのカラムlanguageがCのものからcontentを取得代入
+        return view('c-page', compact('title','pics','content'));
     }
     
     //machine code pictures page
     public function machine()
     {
-        $pics =DB::table('posts')->where('language','Machine')->pluck('image');
-        return view('Machine-page', compact('pics'));
+        $title=DB::table('posts')->where('language','Macine')->pluck('title'); //DBのカラムlanguageがCのものからtitleを取得代入
+        $pics =DB::table('posts')->where('language','Machine')->pluck('image'); //DBのカラムlanguageがCのものからimageを取得代入
+        $content=DB::table('posts')->where('language','Machine')->pluck('content');//DBのカラムlanguageがCのものからcontentを取得代入
+        return view('c-page', compact('title','pics','content'));
     }
     
     //download each image
