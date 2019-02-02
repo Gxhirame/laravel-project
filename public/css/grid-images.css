@@ -1,0 +1,24 @@
+.showroom{
+margin:0;
+padding:0;
+margin:50;
+}
+#ul-box{
+width:450px;
+}
+.showroom li{
+margin:4px;
+float:left;
+list-style:none;
+margin:-0px;
+text-align:right;
+}
+
+/*フォント*/
+.h1{
+font-style:oblique;
+}
+
+.span upload{
+font-size:30;
+}
