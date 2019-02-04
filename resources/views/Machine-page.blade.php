@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Machine code</h1>
+<h1>Machine code </h1>
 <?php
 if(isset ($pics)){
     foreach($pics as $pic){
